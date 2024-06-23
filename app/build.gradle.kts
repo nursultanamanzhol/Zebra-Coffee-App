@@ -1,14 +1,11 @@
+@file:Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    id("com.android.application")
+    alias(libs.plugins.androidApplication)
     kotlin("kapt")
-    id("org.jetbrains.kotlin.android")
-    id("dagger.hilt.android.plugin")
-    id("kotlin-kapt")
-    id("kotlin-parcelize")
-    id("kotlin-android")
-    id("com.google.dagger.hilt.android")
-    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
-    id("com.google.gms.google-services")
+    alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.hiltAndroid)
+    alias(libs.plugins.secretsGradlePlugin)
+    alias(libs.plugins.googleServices)
 }
 
 android {
@@ -62,149 +59,114 @@ android {
 }
 
 dependencies {
-
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
-    implementation("androidx.activity:activity-compose:1.8.2")
-    implementation(platform("androidx.compose:compose-bom:2023.06.01"))
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
-    implementation("androidx.compose.material:material")
-    implementation("androidx.room:room-common:2.6.1")
-    implementation("androidx.viewpager2:viewpager2:1.0.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.android.composeUi)
+    implementation(libs.android.composeMaterial3)
+//    implementation("androidx.compose.ui:ui-tooling-preview")
+//    implementation("androidx.compose.material3:material3")
+//    implementation("androidx.compose.material:material")
+    implementation(libs.androidx.room.common)
+    implementation(libs.androidx.viewpager2)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-
     //splash screen
-    implementation("androidx.core:core-splashscreen:1.0.1")
-
+    implementation(libs.androidx.core.splashscreen)
     //navigation
-    implementation("androidx.navigation:navigation-compose:2.7.7")
-
+    implementation(libs.androidx.navigation.compose)
     //retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3")
-    implementation("com.google.code.gson:gson:2.10.1")
-
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
+    implementation(libs.gson)
     // Dependency Injection
-    implementation("com.google.dagger:hilt-android:2.48.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.48.1")
-    implementation("androidx.hilt:hilt-work:1.1.0")
-    kapt("androidx.hilt:hilt-compiler:1.1.0")
-    implementation("androidx.work:work-runtime-ktx:2.9.0")
-    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
-
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+    implementation(libs.androidx.hilt.work)
+    kapt(libs.androidx.hilt.compiler)
+    implementation(libs.androidx.work.runtime.ktx)
+    implementation(libs.androidx.hilt.navigation.compose)
     //okHttp
-    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.3")
-    implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.6")
-
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
     //glide
-    implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
-
-
+    implementation(libs.compose)
     // Lifecycle
-    val lifecycleVersion = "2.7.0"
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycleVersion")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:$lifecycleVersion")
-
+    implementation(libs.lifecycle.viewmodel.compose)
+    implementation(libs.lifecycle.viewmodel.ktx)
+    implementation(libs.lifecycle.runtime.compose)
     //lottie
-    implementation("com.airbnb.android:lottie-compose:6.3.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-
+    implementation(libs.android.lottie.compose)
+    implementation(libs.androidx.appcompat)
     //permission
-    implementation("com.google.accompanist:accompanist-permissions:0.28.0")
-    implementation("com.google.android.gms:play-services-location:21.1.0")
-
+    implementation(libs.accompanist.permissions)
+    implementation(libs.play.services.location)
     //room
-    val roomVersion = "2.6.1"
-    implementation("androidx.room:room-runtime:$roomVersion")
-    implementation("androidx.room:room-ktx:$roomVersion")
-    annotationProcessor("androidx.room:room-compiler:$roomVersion")
-    kapt("androidx.room:room-compiler:$roomVersion")
-
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    annotationProcessor(libs.room.compiler)
+    kapt(libs.androidx.room.room.compiler2)
     // optional - Paging 3 Integration
-    implementation("androidx.room:room-paging:$roomVersion")
-
-    implementation("androidx.compose.ui:ui:1.6.2")
-
-    val paging_version = "3.1.1"
-    implementation("androidx.paging:paging-runtime:$paging_version")
-    implementation("androidx.paging:paging-compose:1.0.0-alpha17")
-
+    implementation(libs.room.paging)
+    implementation(libs.android.composeUi)
+    implementation(libs.androidx.paging.runtime)
+    implementation(libs.androidx.paging.compose)
     //Paging
-    implementation("androidx.paging:paging-runtime-ktx:3.2.1")
-    //  implementation("androidx.paging:paging-compose:1.0.0-alpha18")
-
-
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
+    implementation(libs.androidx.paging.runtime.ktx)
+    implementation(libs.kotlinx.serialization.json)
     //ConstraintLayout in Compose
-    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
-
+    implementation(libs.androidx.constraintlayout.compose)
     //data store
-    implementation("androidx.datastore:datastore-preferences:1.0.0")
-
+    implementation(libs.androidx.datastore.preferences)
     //gson
-    implementation("com.google.code.gson:gson:2.10.1")
-
-
+    implementation(libs.gson)
     //Google Services & Maps
-    implementation("com.google.android.gms:play-services-location:21.0.1")
-    implementation("com.google.maps.android:maps-compose:2.9.0")
-    implementation("com.google.android.gms:play-services-maps:18.1.0")
-    implementation("com.google.android.gms:play-services-maps:17.0.0")
-    implementation("com.google.maps.android:maps-ktx:5.0.0")
-
-
+    implementation(libs.play.services.location)
+    implementation(libs.maps.compose)
+    implementation(libs.play.services.maps)
+    implementation(libs.gms.play.services.maps)
+    implementation(libs.maps.ktx)
     //Accompanist (Permission)
-    implementation("com.google.accompanist:accompanist-permissions:0.31.3-beta")
-
+    implementation(libs.accompanist.permissions)
     //exo-player
-    implementation("com.google.android.exoplayer:exoplayer:2.19.1")
-    implementation("androidx.media3:media3-exoplayer:1.3.0")
-    implementation("androidx.media3:media3-ui:1.3.0")
-
+    implementation(libs.exoplayer)
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.ui)
     //glide
-    implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
+    implementation(libs.compose)
     //coil
-    implementation("io.coil-kt:coil-compose:2.6.0")
-    implementation("androidx.compose.ui:ui-graphics:1.6.4")
-    implementation("com.caverock:androidsvg:1.4")
+    implementation(libs.coil.compose)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidsvg)
     //Chucker
-    debugImplementation("com.github.chuckerteam.chucker:library:4.0.0")
-    releaseImplementation("com.github.chuckerteam.chucker:library-no-op:4.0.0")
+    debugImplementation(libs.library)
+    releaseImplementation(libs.library.no.op)
     //Pull Refresh
-    implementation("androidx.compose.material:material:1.4.0-beta01")
-    implementation("com.google.accompanist:accompanist-swiperefresh:0.27.0")
+    implementation(libs.androidx.material)
+    implementation(libs.accompanist.swiperefresh)
     //clustering
-    implementation("com.google.maps.android:android-maps-utils:2.3.0")
-
+    implementation(libs.android.maps.utils)
     // Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
-
-    implementation("com.google.firebase:firebase-analytics")
-    implementation("com.google.firebase:firebase-messaging-ktx:23.4.0")
-    implementation("com.google.firebase:firebase-messaging")
-    // When using the BoM, don't specify versions in Firebase dependencies
-
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebaseAnalytics)
+    implementation(libs.firebase.messaging.ktx)
+    implementation(libs.firebaseMessaging)
     //Accompanist System UI Controller Deprecated
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.32.0")
-    implementation("androidx.activity:activity-compose:1.8.0-alpha07")
-
+    implementation(libs.accompanist.systemuicontroller)
+    implementation(libs.androidx.activity.compose)
     //Google SMS-Retriever
-    implementation ("com.google.android.gms:play-services-auth:20.5.0")
-    implementation ("com.google.android.gms:play-services-auth-api-phone:18.0.1")
-
+    implementation (libs.play.services.auth)
+    implementation (libs.play.services.auth.api.phone)
     //LeakCanary
 //    debugImplementation ("com.squareup.leakcanary:leakcanary-android:2.9.1")
-    implementation ("com.google.maps.android:android-maps-utils:2.2.5")
-    implementation ("com.google.maps.android:maps-utils-ktx:3.1.0")
+    implementation (libs.android.maps.utils)
+    implementation (libs.maps.utils.ktx)
 
 }
