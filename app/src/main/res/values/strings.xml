@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">ZEBRA COFFEE</string>
+    <string name="open_sheet">Open sheet</string>
+    <string name="welcome_message">Добро пожаловать в </string>
+    <string name="zebra_coffee"> ZEBRA COFFEE</string>
+    <string name="description_text">100 кофеен в Казахстане и не только. \nОбъединяем сердца.</string>
+    <string name="btn_next">Далее</string>
+    <string name="btn_edit">Редактировать</string>
+    <string name="title_first">КОФЕ КОТОРЫЙ ОБЪЕДИНЯЕТ</string>
+    <string name="title_second">ЯРКИЙ ВКУС</string>
+    <string name="title_third">МЫ ЦЕНИМ ВАШЕ ВРЕМЯ</string>
+    <string name="description_first">ZEBRA COFFEE - международная сеть кофеен экспресс формата, с премиальным свежеобжареным зерном профессионального приготовления.</string>
+    <string name="description_second">В ZEBRA COFFEE вы найдете уникальные авторские напитки, созданные с использованием натуральных фруктов-ягодных экстрактов, которые идеально дополнят богатство кофейных оттенков, не перебивая его уникальный вкус.</string>
+    <string name="description_third">Поэтому гарантируем быстрое и внимательное обслуживание. У нас ваше утро начинается с улыбки!</string>
+    <string name="hyperLink_text">Нажимая на кнопку Далее вы соглашаетесь\nс Политикой конфиденциальности и\nУсловиями использования</string>
+    <string name="write_phone_number">Введите номер\nтелефона</string>
+    <string name="error_message_code">Неверный код, повторите попытку</string>
+    <string name="send">Отправить</string>
+    <string name="send_request_again">Отправить запрос заново</string>
+    <string name="verify_phone_number">Подтвердите номер\nтелефона</string>
+    <string name="name_hint">Ваше имя</string>
+    <string name="birthday_hint">Дата рождения</string>
+    <string name="error_formatDate">Формат даты не поддерживается</string>
+    <string name="choose_avatar">Выберите себе аватар</string>
+    <string name="save_btn">Сохранить</string>
+    <string name="welcome_text">Добро пожаловать\nв ZEBRA COFFEE</string>
+    <string name="awards">Награды</string>
+    <string name="soon">Скоро</string>
+    <string name="how_take_more">Как получить больше</string>
+    <string name="myQr">мой qr</string>
+    <string name="myQr_show_text">Покажите QR кассиру для оплаты</string>
+    <string name="myQr_uniueq_text">Ваш уникальный код</string>
+    <string name="empty_screen_title_text">На данное время заказ\nс приложение недоступно</string>
+    <string name="empty_screen_coffee_shop_screen">Выберите город в приложении, чтобы увидеть список доступных заведений.</string>
+    <string name="navigate_to_coffee_shop">Перейти к кофейне</string>
+    <string name="profile">Профиль</string>
+    <string name="delete_account">удалить аккаунт</string>
+    <string name="welcome_sub_text">Эта ваша карта лояльности. Покажите QR на\n кассе,чтобы получать ZEBRA COINS и\n повышать уровень скидки.</string>
+
+    <!--Allowing Page-->
+    <string name="open_short_bottom_sheet">Open Short Bottom sheet</string>
+    <string name="open_hard_bottom_sheet">Open Hard Bottom sheet</string>
+    <string name="open_notifications">Open Notifications</string>
+    <string name="location_access">Open Location access</string>
+    <string name="notification_screen">Open NotificationScreen</string>
+    <string name="new_update">Новое обновление</string>
+    <string name="hard_update">Update..</string>
+    <string name="notification_text">Хотите знать об акциях и скидках?</string>
+    <string name="your_location">Ваша геолокация</string>
+    <string name="first_line">First line</string>
+    <string name="second_line">Second line</string>
+    <string name="third_line">Third line</string>
+    <string name="dump_line">...</string>
+    <string name="ShortUpdate">Обновить</string>
+    <string name="HardUpdate">Обновить Приложение</string>
+    <string name="BtnOnNotification">Включить уведомления</string>
+    <string name="enable_geolocation">Разрешить геолокацию</string>
+    <string name="hardUpdateDesc">[Description]</string>
+    <string name="skip">Пропустить</string>
+    <string name="notificationDesc">Включите уведомления чтобы узнать об акциях и скидках. А еще мы регулярно рассылаем промокоды на покупки.</string>
+    <string name="locationDesc">Включите геолокацию чтобы быстро найти и добраться до кофеен ZEBRA</string>
+    <string name="navigate_to_home">Перейти на главную</string>
+
+
+    <string name="notificationToolbar">Уведомление</string>
+    <string name="no_notification">Еще нет уведомлений</string>
+    <string name="toolbarNotification">Уведомления</string>
+    <string name="loyalSystemsToolbar">Система лояльности</string>
+
+    <string name="common_yesterday">Вчера</string>
+    <string name="common_today">Сегодня</string>
+    <string name="common_error_unknown">Что-то пошло не так, попробуйте еще раз</string>
+    <string name="discountLevel">Уровни скидок</string>
+
+    <string name="getMoreDiscount">Как получить больше скидок?</string>
+     <string name="getMoreDiscountDescPersentag">
+          ・50 и более напитков - 5% скидки
+        \n・70 и более напитков - 7% скидки
+        \n・100 и более напитков - 10% скидки
+    </string>
+
+    <string name="are_you_sure_logout">Вы точно хотите выйти?</string>
+    <string name="exit">Выйти</string>
+    <string name="delete">Удалить</string>
+    <string name="are_you_sure_delete">Вы точно хотите удалить ваш аккаунт?</string>
+    <string name="cancel">Отменить</string>
+
+    <string name="term_of_use">Пользовательское соглашение</string>
+    <string name="term_of_legal">Политика конфиденциальности</string>
+    <string name="make_star">Оценить приложение в Play Market</string>
+    <string name="aboutUs_sub_tetx">Премиум зерновой и профессионально приготовленный кофе на качественном оборудовании</string>
+  
+    <string name="system_theme">Системная</string>
+    <string name="light_theme">Светлая тема</string>
+    <string name="dark_theme">Темная тема</string>
+    <string name="user_info">Личные данные</string>
+    <string name="name">Имя</string>
+    <string name="phoneNumber">Номер телефона</string>
+    <string name="birthDate">Дата рождения</string>
+    <string name="avatar">Аватар</string>
+
+    <string name="inviteFriends">Пригласить друзей</string>
+    <string name="ownInfo">Личные данные</string>
+    <string name="aboutUs">О нас</string>
+    <string name="interface_language">Интерфейс приложения</string>
+    <string name="notification">Уведомления</string>
+    <string name="logout_app">Выйти из приложения</string>
+
+    <string name="coffee_city_name_select">Выберите город</string>
+    <string name="coffee_top_bar_title">Кофейни</string>
+    <string name="coffee_city">Город</string>
+    <string name="coffee_city_name_select_not">Сначала выберите город</string>
+    <string name="review_page_write_review">написать отзыв</string>
+    <string name="toolbarReview">отзывы\n</string>
+    <string name="no_reviewScreen">Еще нет отзывов</string>
+    <string name="discountBottom">% скидки</string>
+    <string name="loyal_how_towork">Как это работает?</string>
+    <string name="loyalLevelDiscount">Ваш уровень скидки</string>
+    <string name="remaining_purchases">Сделайте еще %1$d покупок для достижения уровня скидки %2$d%%</string>
+    <string name="coffee_shop_rating">Рейтинг %1\$s из 5</string>
+    <string name="All_Reviews">Все отзывы</string>
+    <string name="Work_TimeDetails">Рабочее время</string>
+    <string name="Learn_More">Узнать больше</string>
+    <string name="Contacts_DetailsScreen">Контакты</string>
+    <string name="CallForContacts">Позвонить</string>
+    <string name="Work_Time_Bottom">Время Работы</string>
+
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="sunday">Воскресение</string>
+    <string name="choose_city">Выбрать город</string>
+    <string name="card_of_cofeeMan">Карта кофемана</string>
+    <string name="send_again">отправить повторно</string>
+    <string name="getMoreDiscountDesc">"Покупайте напитки в ZEBRA COFFEE и получайте % скидки! Скидки применяются только на кофейные и чайные напитки:"</string>
+    <string name="map">Карта</string>
+    <string name="basketBtn">Корзина</string>
+    <string name="cluster_item_title">Title cluster</string>
+<!--    <item name="maps_compose_nodraw_container_view" type="id" />-->
+
+</resources>
+

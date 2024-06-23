@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "801945330787",
+    "project_id": "zebracoffee-acf5a",
+    "storage_bucket": "zebracoffee-acf5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801945330787:android:4018dce930c83c31f34456",
+        "android_client_info": {
+          "package_name": "com.example.zebracoffee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801945330787-104e0cbr2f2r3ja9bjltr8t004p1b2se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdh_P6PbQI4UK9dZxKiMUSMgzce5cXf_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801945330787-104e0cbr2f2r3ja9bjltr8t004p1b2se.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "801945330787-emnq8pof4n0reikqrc22v8kg6mils5en.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kz.zebra-coffee.ios-app",
+                "app_store_id": "6474022904"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+package com.example.zebracoffee.data.modelDto
+
+import com.google.android.gms.maps.model.LatLng
+
+data class CoffeeDetails(
+    val address: String,
+    val blocked: Boolean,
+    val card_account_id: Int,
+    val cash_account_id: Int,
+    val city: String,
+    val contacts: String,
+    val cover: String?,
+    val distance: Double,
+    val id: Int,
+    val latitude: Double,
+    val longitude: Double,
+    val name: String,
+    val open_from: String,
+    val open_until: String,
+    val pager_active: Boolean,
+    val rating: Double,
+    val schedule: Schedule,
+    val shop_images: List<ShopImage>,
+    val tis_token: String,
+    val warehouse_address: String?,
+    val warehouse_name: String?,
+    val two_gis_link: String
+)
+data class CoffeeDetailsMap(
+    val itemPosition: LatLng,
+    val itemTitle: String,
+    val itemSnippet: String,
+    val itemZIndex: Float,
+    val address: String,
+    val blocked: Boolean,
+    val card_account_id: Int,
+    val cash_account_id: Int,
+    val city: String,
+    val contacts: String,
+    val cover: String,
+    val distance: Double,
+    val id: Int,
+    val latitude: Double,
+    val longitude: Double,
+    val name: String,
+    val open_from: String,
+    val open_until: String,
+    val pager_active: Boolean,
+    val rating: Double,
+    val schedule: Schedule,
+    val shop_images: List<ShopImage>,
+    val tis_token: String,
+    val warehouse_address: String,
+    val warehouse_name: String,
+    val two_gis_link: String
+)
